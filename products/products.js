@@ -14,8 +14,6 @@ const categories = ['home', 'laptop', 'mobiles']
 function generateProds() {
     // let productIndex = 0;
     const products = 6;
-
-
     for (let i = 0; i < products; i++) {
         prods.push(
             new Product(
@@ -27,8 +25,7 @@ function generateProds() {
             )
         );
     }
-
-    // console.log(prods);
+     console.log(prods);
     return prods;
 }
 
