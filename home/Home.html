@@ -23,6 +23,8 @@
                 <li><a href="../products/products.html">Products</a></li>
                 <li><a  target="_blank"  href="../contactUs/contact-us.html">Contact Us</a></li>
                 <li><a href="../about/About.html">About</a></li>
+                <button onclick="darkmode()">Toggle dark mode</button>
+
             </ul>
             <ul>
                 <li><a href="../home/card.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
@@ -79,11 +81,21 @@
         </ul>
     </footer>
 <style>
-/* .span{
-
-
-} */
+ 
+.dark-mode {
+  background-color: black;
+  color: white;
+}
 </style>
+
+<script>
+function darkmode() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+
+
+</script>
 
 </body>
 

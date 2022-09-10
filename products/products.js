@@ -64,9 +64,18 @@ document.querySelectorAll(".ctg").forEach((btn) =>
     btn.addEventListener("click", (e) => {
         shownProds = prods.filter(product => product.categories.includes(e.target.id));
         showProducts();
+        console.log(btn);
     })
 );
 
+// ??ram
+document.querySelectorAll(".range").forEach((btn) =>
+    btn.addEventListener("change", (e) => {
+        shownProds = prods.filter(product => product.price.includes(e.target.value));
+        showProducts();
+        console.log(shownProds);
+    })
+);
 
 function addToCart(btnId) {
 

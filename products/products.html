@@ -42,8 +42,11 @@
                 <button class="ctg" id="home">Home</button>
                 <button class="ctg" id="laptop">Laptop</button>
                 <button class="ctg" id="mobiles">Mobiles</button>
-            </ul>
+                <button onclick="darkmode()">Toggle dark mode</button>
 
+
+            </ul>
+<label> >x <input type="text" class="range" value=""></label> 
  
             <style>
                 #categories {
@@ -124,6 +127,26 @@ margin-bottom: 0.5rem;
 }
 
 </style>
+
+<style>
+ 
+    .dark-mode {
+      background-color: black;
+      color: white;
+    }
+    </style>
+    
+    <script>
+    function darkmode() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+    
+    
+    </script>
+
+
+
     </body>
 
 </html>
