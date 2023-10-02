@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+    <script>
+
+
+
+function showProducts() {
+    const prodsContainer = document.querySelector("main");
+    prodsContainer.innerHTML = "";
+    shownProds.forEach(product => {
+        let prodDiv = document.createElement("div");
+        prodsContainer.appendChild(prodDiv)
+        prodDiv.id = `div_${product.id}`;
+        prodDiv.className = "prodDiv";
+        prodDiv.innerHTML = `
+            <img class="productImg" src="${product.imgSrc}">
+            <div class="prodInfo">
+            <span class="prodName">
+            ${product.name}
+            </span>
+            <span class="prodPrice">
+            ${product.price}
+            </span>
+            </div>
+            <button id="btn_${product.id}" class="addCart" onclick="addToCart(this.id)">Add to Cart</button>
+        `;
+    });
+}
+
+
+
+
+
+
+
+
+
+
+        // <div id="content">
+
+        //     <div class="card"><div class="image">
+        //         <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" width="300">
+        //     </div>
+        //         <div class="info">
+        //             <h3>Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</h3>
+        //             <p><b>Description: </b>
+        //                 <br>Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday</p><p>
+        //                 <i>Category:  men's clothing</i></p><div class="ratingStars"></div></div>
+        //         <div style="text-align: center"><span>$ 109.95</span></div><div class="ratingStars"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span style="color:black"> 3.9 (120)</span></div></div></div>
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

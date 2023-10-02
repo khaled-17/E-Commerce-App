@@ -62,11 +62,20 @@ document.querySelector("#all").addEventListener("click", () => {
 
 document.querySelectorAll(".ctg").forEach((btn) =>
     btn.addEventListener("click", (e) => {
-        shownProds = prods.filter(product => product.categories.includes(e.target.id));
-        showProducts();
+        // shownProds = prods.filter(product => product.categories.includes(e.target.id));
+        // showProducts();
         console.log(btn);
     })
 );
+ 
+
+var x=document.querySelectorAll(".productImg").values()
+console.log(x);
+
+
+
+
+
 
 // ??ram
 document.querySelectorAll(".range").forEach((btn) =>
@@ -76,6 +85,16 @@ document.querySelectorAll(".range").forEach((btn) =>
         console.log(shownProds);
     })
 );
+
+
+
+
+
+
+ 
+
+
+
 
 function addToCart(btnId) {
 
